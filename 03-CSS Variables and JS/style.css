@@ -1,0 +1,35 @@
+/* css variables definition (same as $ in SASS) */
+:root {
+  --base: #ffc600;
+  --spacing: 10px;
+  --blur: 10px;
+}
+
+img {
+  background-color: var(--base);
+  filter: blur(var(--blur));
+  padding: var(--spacing);
+}
+
+.hl {
+  color: var(--base);
+}
+
+/* misc styles, nothing to do with CSS variables */
+body {
+  background: #193549;
+  color: white;
+  font-family: 'helvetica neue', sans-serif;
+  font-size: 50px;
+  font-weight: 100;
+  text-align: center;
+}
+
+input {
+  width: 100px;
+}
+
+.controls {
+  margin-bottom: 50px;
+}
+
