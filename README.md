@@ -8,6 +8,6 @@
 
 3. [CSS Variables and JS](https://github.com/amelieyeh/JS30/blob/master/03-CSS%20Variables%20and%20JS/README.md)
 
-4. Array Cardio Day 1
+4. [Array Cardio Day 1](https://github.com/amelieyeh/JS30/blob/master/04-Array%20cardio%20day%201/README.md)
 
 5. Flex Panels Image Gallery
