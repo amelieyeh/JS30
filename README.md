@@ -8,4 +8,8 @@
 4. [Array Cardio Day 1](https://github.com/amelieyeh/JS30/blob/master/04-Array%20cardio%20day%201/README.md)
 5. [Flex Panels Image Gallery](https://github.com/amelieyeh/JS30/blob/master/05-Flex%20Panels%20Image%20Gallery/README.md)
 6. [Ajax Type Ahead](https://github.com/amelieyeh/JS30/blob/master/06-Ajax%20Type%20Ahead/README.md)
-7. Array Cardio Day 2
+7. [Array Cardio Day 2](https://github.com/amelieyeh/JS30/blob/master/07-Array%20cardio%20day%202/README.md)
+8. Fun with HTML5 Canvas
+9. 14 Must Know Dev Tools Tricks
+10. Hold Shift to Check Multiple Checkboxes
+
