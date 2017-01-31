@@ -11,5 +11,6 @@
 7. [Array Cardio Day 2](https://github.com/amelieyeh/JS30/blob/master/07-Array%20cardio%20day%202/README.md)
 8. [Fun with HTML5 Canvas](https://github.com/amelieyeh/JS30/blob/master/08-Fun%20with%20HTML5%20Canvas/README.md)
 9. [14 Must Know Dev Tools Tricks](https://github.com/amelieyeh/JS30/blob/master/09-Dev%20Tools%20Domination/README.md)
-10. Hold Shift to Check Multiple Checkboxes
+10. [Hold Shift to Check Multiple Checkboxes](https://github.com/amelieyeh/JS30/blob/master/10-Hold%20Shift%20and%20Check%20Checkboxes/README.md)
+
 
