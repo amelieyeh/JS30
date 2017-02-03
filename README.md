@@ -12,5 +12,9 @@
 8. [Fun with HTML5 Canvas](https://github.com/amelieyeh/JS30/blob/master/08-Fun%20with%20HTML5%20Canvas/README.md)
 9. [14 Must Know Dev Tools Tricks](https://github.com/amelieyeh/JS30/blob/master/09-Dev%20Tools%20Domination/README.md)
 10. [Hold Shift to Check Multiple Checkboxes](https://github.com/amelieyeh/JS30/blob/master/10-Hold%20Shift%20and%20Check%20Checkboxes/README.md)
-
+11. [Custom Video Player](https://github.com/amelieyeh/JS30/blob/master/11-Custom%20Video%20Player/README.md)
+12. Key Sequence Detection (KONAMI CODE)
+13. Slide In on Scroll
+14. Object and Arrays - Reference VS Copy
+15. LocalStorage and Event Delegation
 
