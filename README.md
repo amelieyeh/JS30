@@ -14,7 +14,7 @@
 10. [Hold Shift to Check Multiple Checkboxes](https://github.com/amelieyeh/JS30/blob/master/10-Hold%20Shift%20and%20Check%20Checkboxes/README.md)
 11. [Custom Video Player](https://github.com/amelieyeh/JS30/blob/master/11-Custom%20Video%20Player/README.md)
 12. [Key Sequence Detection (KONAMI CODE)](https://github.com/amelieyeh/JS30/blob/master/12-Key%20Sequence%20Detection/README.md)
-13. Slide In on Scroll
+13. [Slide In on Scroll](https://github.com/amelieyeh/JS30/blob/master/13-Slide%20in%20on%20Scroll/README.md#checking-images)
 14. Object and Arrays - Reference VS Copy
 15. LocalStorage and Event Delegation
 
