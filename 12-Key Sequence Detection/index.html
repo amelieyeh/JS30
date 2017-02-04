@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Amelie Yeh">
+    <title>Key Detection</title>
+    <script type="text/javascript" src="http://www.cornify.com/js/cornify.js"></script>
+    <style>
+      html { background-color: #e2e0db; }
+      .title {
+        color: #b2c4c3;
+        font-size: 160px;
+        font-weight: bold;
+        line-height: 2em;
+        margin: 0;
+        text-align: center;
+      }
+
+      .decode {
+        color: red;
+        font-size: 80px;
+        font-weight: bold;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="title">Life is...</div>
+    <div class="decode"></div>
+
+    <script>
+      const pressed = [];
+      const secretCode = 'happy';
+      let decode = document.querySelector('.decode');
+
+      window.addEventListener('keyup', (e) => {
+        // `console.log()` the `e.key` out will get the name of the key that we pressed
+        console.log(e.key);
+        // `array.push` to store the keys into an array
+        pressed.push(e.key);
+
+        // check if pressed keys matches the secretCode, and then add cornify effect if matched
+        pressed.splice(- secretCode.length - 1, pressed.length - secretCode.length);
+        if(pressed.join('').includes(secretCode)) {
+          decode.innerHTML= '';
+          decode.insertAdjacentHTML('afterbegin', secretCode);
+          console.log('Wow, Amazing!');
+          cornify_add();
+        }
+
+        console.log(pressed);
+      });
+    </script>
+  </body>
+</html>
