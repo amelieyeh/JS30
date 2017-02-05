@@ -16,5 +16,6 @@
 12. [Key Sequence Detection (KONAMI CODE)](https://github.com/amelieyeh/JS30/blob/master/12-Key%20Sequence%20Detection/README.md)
 13. [Slide In on Scroll](https://github.com/amelieyeh/JS30/blob/master/13-Slide%20in%20on%20Scroll/README.md#checking-images)
 14. [Object and Arrays - Reference VS Copy](https://github.com/amelieyeh/JS30/blob/master/14-JavaScript%20References%20VS%20Copying/README.md)
-15. LocalStorage and Event Delegation
+15. [LocalStorage and Event Delegation](https://github.com/amelieyeh/JS30/blob/master/15-LocalStorage%20and%20Event%20Delegation/README.md)
+
 
