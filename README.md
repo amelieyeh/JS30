@@ -17,5 +17,9 @@
 13. [Slide In on Scroll](https://github.com/amelieyeh/JS30/blob/master/13-Slide%20in%20on%20Scroll/README.md#checking-images)
 14. [Object and Arrays - Reference VS Copy](https://github.com/amelieyeh/JS30/blob/master/14-JavaScript%20References%20VS%20Copying/README.md)
 15. [LocalStorage and Event Delegation](https://github.com/amelieyeh/JS30/blob/master/15-LocalStorage%20and%20Event%20Delegation/README.md)
-
+16. [CSS Text Shadow Mouse Move Effect](https://github.com/amelieyeh/JS30/blob/master/16-Mouse%20Move%20Shadow/README.md)
+17. Sorting Band Names without articles
+18. Tally String Times with Reduce
+19. Unreal Webcam Fun
+20. Native Speech Recognition
 

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Amelie Yeh">
+    <title>Mouse Shadow</title>
+  </head>
+  <body>
+    <div class="hero">
+      <h1 contenteditable>🚀 LAUNCH!!</h1>
+    </div>
+
+    <style>
+    html {
+      color:black;
+      font-family: sans-serif;
+    }
+
+    body {
+      background-image: url("images/space.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    .hero {
+      min-height: 100vh;
+      display:flex;
+      justify-content: center;
+      align-items: center;
+      color: #e2e0db;
+    }
+
+    h1 {
+      text-shadow: 10px 10px 0 rgba(0,0,0,1);
+      font-size: 100px;
+    }
+    </style>
+
+    <script>
+      const hero = document.querySelector('.hero');
+      const text = hero.querySelector('h1');
+      const walk = 500;  // 500px
+
+      function shadow(e) {
+        // const width = hero.offsetWidth;
+        // const height = hero.offsetHeight;
+        const { offsetWidth: width, offsetHeight: height } = hero;  // ES6 syntax
+        let { offsetX: x, offsetY: y } = e;  // ES6 syntax
+
+        console.log(this, e.target);  // will see that `this` is `.hero` and `e.target` is `h1`
+
+        if(this !== e.target) {
+          x = x + e.target.offsetLeft;
+          y = y + e.target.offsetTop;
+        }
+
+        const xWalk = Math.round((x / width * walk) - (walk / 2));
+        const yWalk = Math.round((y / height * walk) - (walk / 2));
+        console.log(xWalk, yWalk);
+
+        text.style.textShadow = `
+          ${xWalk}px ${yWalk}px 0 rgba(255, 0, 255, 0.7),
+          ${xWalk * -1}px ${yWalk}px 0 rgba(0, 255, 255, 0.6),
+          ${yWalk}px ${xWalk * -1}px 0 rgba(0, 255, 0, 0.5),
+          ${yWalk * -1}px ${xWalk}px 0 rgba(0, 0, 255, 0.4)
+        `;
+      }
+
+      hero.addEventListener('mousemove', shadow);
+    </script>
+  </body>
+</html>
+
