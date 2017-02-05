@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Amelie Yeh">
+    <title>Sort Without Articles</title>
+  </head>
+  <body>
+    <style>
+      body {
+        font-family: sans-serif;
+        background: url("https://images.unsplash.com/photo-1481886756534-97af88ccb438?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=2000&h=2000&fit=crop&s=a55926e5500b13959c228a9ba18de945");
+        background-size: cover;
+        display: flex;
+        align-items: center;
+        min-height: 100vh;
+        margin: 60px auto;
+      }
+
+      #bands {
+        box-shadow: 0 0 0 20px rgba(0, 0, 0, 0.2);
+        font-size: 20px;
+        list-style: inside square;
+        margin: auto;
+        padding: 0;
+        position: relative;
+        width: 500px;
+      }
+
+      #bands li {
+        background-color: rgba(255,255,255,0.6);
+        padding: 20px;
+      }
+
+      #bands li + li {
+        margin-top: 2px;
+      }
+
+      #bands::before {
+        background-color: rgba(203, 203, 203, 0.75);
+        content: "Band List";
+        font-size: 30px;
+        padding: 10px 60px;
+        position: absolute;
+        right: -50px;
+        top: -10px;
+        transform: rotate(10deg);
+      }
+
+      a {
+        color: #ffc600;
+        text-decoration: none;
+      }
+    </style>
+    <ul id="bands"></ul>
+
+  <script>
+  const bands = ['The Plot in You', 'The Devil Wears Prada', 'Pierce the Veil', 'Norma Jean', 'The Bled', 'Say Anything', 'The Midway State', 'We Came as Romans', 'Counterparts', 'Oh, Sleeper', 'A Skylit Drive', 'Anywhere But Here', 'An Old Dog'];
+
+  // strip out the specified words
+  function strip(bandName) {
+    return bandName.replace(/^(a |the |an )/i, '').trim();
+  }
+
+  // notice that we are only using `strip()` in if statement, and we are not actually going to be modify our data (it's not neccessary to do so)
+
+  const sortedBands = bands.sort((a, b) => strip(a) > strip(b) ? 1 : -1);  // just in one hot line
+    // if(strip(a) > strip(b)) {
+    //   return 1;
+    // } else {
+    //   return -1;
+    // }
+
+  // takes the element and sets to the `innerHTML`, and that's going to return an array with `,`s by default, so we want to `join()` it into one big string rather than a bunch of string with with a comma in between
+  document.querySelector('#bands').innerHTML =
+    sortedBands
+      .map(band => `<li>${band}</li>`)
+      .join('');
+
+  console.log(sortedBands);
+
+  </script>
+
+  </body>
+</html>
+
