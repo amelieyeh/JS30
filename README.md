@@ -25,7 +25,7 @@
 21. [Geolocation based Speedometer and Compass](https://github.com/amelieyeh/JS30/blob/master/21-Geolocation/README.md)
 22. [Follow Along Links](https://github.com/amelieyeh/JS30/blob/master/22-Follow%20Along%20Link%20Highlighter/README.md)
 23. [Speech Synthesis](https://github.com/amelieyeh/JS30/blob/master/23-Speech%20Synthesis/README.md)
-24. Sticky Nav
+24. [Sticky Nav](/24-Sticky Nav/README.md)
 25. Event Capture, Propagation, Bubbling and Once
 
 
