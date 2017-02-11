@@ -1,0 +1,148 @@
+html {
+  box-sizing: border-box;
+  font-family: "Arial Rounded MT Bold","Helvetica Rounded",Arial,sans-serif
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+body {
+  min-height: 100vh;
+  background-color: #6d695c;
+  background-image:
+  repeating-linear-gradient(120deg, rgba(255,255,255,.1), rgba(255,255,255,.1) 1px, transparent 1px, transparent 60px),
+  repeating-linear-gradient(60deg, rgba(255,255,255,.1), rgba(255,255,255,.1) 1px, transparent 1px, transparent 60px),
+  linear-gradient(60deg, rgba(0,0,0,.1) 25%, transparent 25%, transparent 75%, rgba(0,0,0,.1) 75%, rgba(0,0,0,.1)),
+  linear-gradient(120deg, rgba(0,0,0,.1) 25%, transparent 25%, transparent 75%, rgba(0,0,0,.1) 75%, rgba(0,0,0,.1));
+  background-size: 70px 120px;
+}
+
+h2 {
+  color: #fff;
+  text-align: center;
+}
+
+img {
+  width: 100px;
+  height: 100px;
+}
+
+nav {
+  position: relative;
+  perspective: 600px;
+}
+
+.cool > li > a {
+  color: yellow;
+  text-decoration: none;
+  font-size: 20px;
+  background: rgba(0,0,0,0.2);
+  padding:10px 20px;
+  display: inline-block;
+  margin:20px;
+  border-radius:5px;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.cool > li {
+  position: relative;
+  display:flex;
+  justify-content: center;
+}
+
+.dropdown {
+  opacity: 0;
+  position: absolute;
+  overflow: hidden;
+  padding:20px;
+  top:-20px;
+  border-radius:2px;
+  transition: all 0.5s;
+  transform: translateY(100px);
+  will-change: transform;
+  display: none;
+}
+
+.trigger-enter .dropdown {
+  display: block;
+}
+
+.trigger-enter-active .dropdown {
+  opacity: 1;
+}
+
+.dropdownBackground {
+  width:100px;
+  height:100px;
+  position: absolute;
+  background: #ccc;
+  border-radius: 4px;
+  box-shadow: 0 50px 100px rgba(50,50,93,.1), 0 15px 35px rgba(50,50,93,.15), 0 5px 15px rgba(0,0,0,.1);
+  transition:all 0.3s, opacity 0.1s, translate 0.2s;
+  transform-origin: 50% 0%;
+  display: flex;
+  justify-content: center;
+  opacity:0;
+}
+
+.dropdownBackground.open {
+  opacity: 1;
+}
+
+.arrow {
+  position: absolute;
+  width:20px;
+  height:20px;
+  display: block;
+  background:#ccc;
+  transform: translateY(-50%) rotate(45deg);
+}
+
+.bio {
+  min-width:500px;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 1.7;
+}
+
+.bio img {
+  float:left;
+  margin-right:20px;
+}
+
+.courses {
+  min-width:300px;
+}
+
+.courses li {
+  padding: 10px 0;
+  display: block;
+  border-bottom: 1px solid rgba(0,0,0,0.2);
+}
+
+.dropdown a {
+  text-decoration: none;
+  color: #b15934;
+}
+
+a.button {
+  background:black;
+  display: block;
+  padding:10px;
+  color:white;
+  margin-bottom: 10px;
+}
+
+
+/* Matches Twitter, TWITTER, twitter, tWitter, TWiTTeR... */
+.button[href*=twitter] { background: #019FE9; }
+.button[href*=facebook] { background: #3B5998; }
+.button[href*=github] { background: #ffc600; }
+

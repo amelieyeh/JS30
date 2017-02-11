@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Amelie Yeh">
+    <title>Follow Along Nav</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <h2>Follow Along Nav</h2>
+    <nav class="top">
+      <div class="dropdownBackground">
+        <span class="arrow"></span>
+      </div>
+
+      <ul class="cool">
+        <li>
+          <a href="#">About Me</a>
+          <div class="dropdown dropdown1">
+            <div class="bio">
+              <img src="https://avatars3.githubusercontent.com/u/1215324?v=3&s=460">
+              <p>I am Amelie who loves web development. I like HTML + CSS and am learning JavaScript. I like reading books which enrich my imagination!!</p>
+            </div>
+          </div>
+        </li>
+        <li>
+          <a href="#">Learning</a>
+          <ul class="dropdown courses">
+            <li>
+              <span class="code">RFB</span>
+              <a href="https://ReactForBeginners.com">React For Beginners</a>
+            </li>
+            <li>
+              <span class="code">ES6</span>
+              <a href="https://ES6.io">ES6 For Everyone</a>
+            </li>
+            <li>
+              <span class="code">LRX</span>
+              <a href="http://LearnRedux.com">Learn Redux</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">Contact me</a>
+          <ul class="dropdown dropdown3">
+            <li><a class="button" href="http://twitter.com/amelieyeh">Twiter</a></li>
+            <li><a class="button" href="http://facebook.com/amelieyeh">Facebook</a></li>
+            <li><a class="button" href="https://github.com/amelieyeh">Github</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+
+    <script>
+      const triggers = document.querySelectorAll('.cool > li');
+      const background = document.querySelector('.dropdownBackground');
+      const nav = document.querySelector('.top');
+
+      function handleEnter() {
+        // console.log('ENTER!');
+        this.classList.add('trigger-enter');
+        setTimeout(() => this.classList.contains('trigger-enter') && this.classList.add('trigger-enter-active'), 150);  // if has `trigger-enter` equals is true then will excute `this.classList.add('trigger-enter-active')` , it will prevent the weird `trigger-enter-active` when you hover quickly between li items
+
+        // ^ here to use ES6 arrow function to properly inherit from it's parent instead, otherwise `this` will be the `window` and will throut an error
+
+        background.classList.add('open');
+
+        const dropdown = this.querySelector('.dropdown');
+        const dropdownCoords = dropdown.getBoundingClientRect();
+        const navCoords = nav.getBoundingClientRect();
+
+        const coords = {
+          height: dropdownCoords.height,
+          width: dropdownCoords.width,
+          top: dropdownCoords.top - navCoords.top,
+          left: dropdownCoords.left - navCoords.left
+        };
+        // to prevent wrong position when the nav has be pushed down or moved offset on X-asis, so `- navCoords.`top/left
+
+        background.style.setProperty('width', `${coords.width}px`);
+        background.style.setProperty('height', `${coords.height}px`);
+        background.style.setProperty('transform', `translate(${coords.left}px, ${coords.top}px)`);
+      }
+
+      function handleLeave() {
+        // console.log('LEAVE!');
+        this.classList.remove('trigger-enter', 'trigger-enter-active');
+        background.classList.remove('open');
+      }
+
+      triggers.forEach(trigger => trigger.addEventListener('mouseenter', handleEnter));
+      triggers.forEach(trigger => trigger.addEventListener('mouseleave', handleLeave));
+
+    </script>
+
+  </body>
+</html>

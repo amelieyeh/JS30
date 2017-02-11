@@ -27,7 +27,7 @@
 23. [Speech Synthesis](https://github.com/amelieyeh/JS30/blob/master/23-Speech%20Synthesis/README.md)
 24. [Sticky Nav](/24-Sticky Nav/README.md)
 25. [Event Capture, Propagation, Bubbling and Once](/25-Event Capture, Propagation, Bubbling and Once/README.md)
-26. Stripe Follow Along Dropdown
+26. [Stripe Follow Along Dropdown](/26-Stripe Follow Along Nav/README.md)
 27. lick and Drag to Scroll
 28. Video Speed Controller UI
 29. Countdown Clock
