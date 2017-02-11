@@ -22,7 +22,7 @@
 18. [Tally String Times with Reduce](https://github.com/amelieyeh/JS30/blob/master/18-Adding%20Up%20Times%20with%20Reduce/README.md)
 19. [Unreal Webcam Fun](https://github.com/amelieyeh/JS30/blob/master/19-Webcam%20Fun/README.md)
 20. [Native Speech Recognition](https://github.com/amelieyeh/JS30/blob/master/20-Speech%20Detection/README.md)
-21. Geolocation based Speedometer and Compass
+21. [Geolocation based Speedometer and Compass](https://github.com/amelieyeh/JS30/blob/master/21-Geolocation/README.md)
 22. Follow Along Links
 23. Speech Synthesis
 24. Sticky Nav
