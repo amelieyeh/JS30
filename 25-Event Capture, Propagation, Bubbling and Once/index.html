@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Amelie Yeh">
+    <title>Understanding JavaScript's Capture</title>
+  </head>
+  <body class="bod">
+    <div class="one">
+      <div class="two">
+        <div class="three">
+        </div>
+      </div>
+    </div>
+    <button>CLICK ME</button>
+
+    <style>
+      html {
+        box-sizing: border-box;
+      }
+      *, *:before, *:after { box-sizing: inherit; }
+
+      div {
+        width:100%;
+        padding:100px;
+      }
+
+      button {
+        color: #333;
+        background-color: #fff;
+        border: 1px solid #ccc;
+        display: block;
+        padding: 6px 12px;
+        margin: 20px auto;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 1.42857143;
+        text-align: center;
+        white-space: nowrap;
+        vertical-align: middle;
+        -ms-touch-action: manipulation;
+        touch-action: manipulation;
+        cursor: pointer;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        background-image: none;
+        border-radius: 4px;
+      }
+
+      .bod::before {
+        color: gray;
+        content: "bod (<body>)";
+        font-size: 30px;
+      }
+      .one {
+        background: thistle;
+        margin-top: 20px;
+        position: relative;
+      }
+      .one::before {
+        color: #9a6f92;
+        content: "one";
+        font-size: 48px;
+        left: 30px;
+        position: absolute;
+        top: 10px;
+      }
+
+      .two {
+        background:mistyrose;
+        position: relative;
+      }
+      .two::before {
+        color: #d2bcba;
+        content: "two";
+        font-size: 48px;
+        left: 30px;
+        position: absolute;
+        top: 10px;
+      }
+
+      .three {
+        background:coral;
+        position: relative;
+      }
+      .three::before {
+        color: #b15934;
+        content: "three";
+        font-size: 48px;
+        left: 30px;
+        position: absolute;
+        top: 10px;
+      }
+    </style>
+
+    <script>
+      const divs = document.querySelectorAll('div');
+      const button = document.querySelector('button');
+
+      function logText(e) {
+        console.log(this.classList.value);
+        e.stopPropagation(); // stop pbubbling this event up
+          // `e.stopPropagation() + capture: true -> one
+        // console.log(this);
+      }
+
+      // bubble up which means that it's triggering that events as you go up
+
+      // document.body.addEventListener('click', logText);
+      // divs.forEach(div => div.addEventListener('click', logText));
+
+    // `capture` is that we will run the function on the way down rather than on the way up
+    divs.forEach(div => div.addEventListener('click', logText, {
+      capture: false  // true: one->two->three, false: three->two->one
+    }));
+
+    // once
+    button.addEventListener('click', () => {
+      console.log('Click!!!');
+    }, {
+      once: false
+    });
+    </script>
+  </body>
+</html>

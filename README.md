@@ -26,6 +26,10 @@
 22. [Follow Along Links](https://github.com/amelieyeh/JS30/blob/master/22-Follow%20Along%20Link%20Highlighter/README.md)
 23. [Speech Synthesis](https://github.com/amelieyeh/JS30/blob/master/23-Speech%20Synthesis/README.md)
 24. [Sticky Nav](/24-Sticky Nav/README.md)
-25. Event Capture, Propagation, Bubbling and Once
-
+25. [Event Capture, Propagation, Bubbling and Once](/25-Event Capture, Propagation, Bubbling and Once/README.md)
+26. Stripe Follow Along Dropdown
+27. lick and Drag to Scroll
+28. Video Speed Controller UI
+29. Countdown Clock
+30. Whack A Mole Game
 
