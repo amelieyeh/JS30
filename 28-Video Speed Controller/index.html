@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Amelie Yeh">
+    <title>Video Speed Scrubber</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="wrapper">
+      <video class="flex" width="765" height="430" src="https://www.dropbox.com/s/nf6jfkwck1glsyo/12%20-%20flex-wrapping-and-columns.mp4?dl=1" loop controls></video>
+      <div class="speed">
+        <div class="speed-bar">1×</div>
+      </div>
+    </div>
+
+    <script>
+      const speed = document.querySelector('.speed');
+      const bar = speed.querySelector('.speed-bar');
+      const video = document.querySelector('.flex');
+
+      function handleSpeed(e) {
+        const y = e.pageY - this.offsetTop;
+        // y: take the offset at which the top of the parent is, and subtract the offset from the Y coordinate, which gives us just how much of the bar is to be filled
+        // console.log(this, y);
+        const percent = y / this.offsetHeight;
+        // calculate the height(%), divide Y by the total height of the parent, `y/offsetHeight` will give us the decimal %
+        const min = 0.4;
+        const max = 4;
+        const height = Math.round(percent * 100) + '%';
+        // multiply by 100 and get how much % of space is to be filled by `speed-bar`.
+        // console.log(height);
+        const playbackRate = percent * (max - min) + min;
+        // find the number associated with that much height and use it as playback rate. at 0 height should be 0.4, and at 100 height it should be 2.5, so we do `percent*(max-min)+min` to match it
+        console.log(playbackRate);
+        bar.style.height = height;
+        bar.textContent = playbackRate.toFixed(2) + 'x';
+        // toFixed(2); displays the number with 2 decimal places
+        video.playbackRate = playbackRate;
+      }
+
+      speed.addEventListener('mousemove', handleSpeed);
+
+    </script>
+  </body>
+</html>
+

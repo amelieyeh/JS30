@@ -29,7 +29,7 @@
 25. [Event Capture, Propagation, Bubbling and Once](/25-Event Capture, Propagation, Bubbling and Once/README.md)
 26. [Stripe Follow Along Dropdown](/26-Stripe Follow Along Nav/README.md)
 27. [Click and Drag to Scroll](/27-Click and Drag/README.md)
-28. Video Speed Controller UI
+28. [Video Speed Controller UI](/28-Video Speed Controller/README.md)
 29. Countdown Clock
 30. Whack A Mole Game
 
