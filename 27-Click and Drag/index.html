@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Amelie Yeh">
+    <title>Click and Drag</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="items">
+      <div class="item item1">01</div>
+      <div class="item item2">02</div>
+      <div class="item item3">03</div>
+      <div class="item item4">04</div>
+      <div class="item item5">05</div>
+      <div class="item item6">06</div>
+      <div class="item item7">07</div>
+      <div class="item item8">08</div>
+      <div class="item item9">09</div>
+      <div class="item item10">10</div>
+      <div class="item item11">11</div>
+      <div class="item item12">12</div>
+      <div class="item item13">13</div>
+      <div class="item item14">14</div>
+      <div class="item item15">15</div>
+      <div class="item item16">16</div>
+      <div class="item item17">17</div>
+      <div class="item item18">18</div>
+      <div class="item item19">19</div>
+      <div class="item item20">20</div>
+      <div class="item item21">21</div>
+      <div class="item item22">22</div>
+      <div class="item item23">23</div>
+      <div class="item item24">24</div>
+      <div class="item item25">25</div>
+    </div>
+
+    <script>
+      const slider = document.querySelector('.items');
+      let isDown = false;  // mouse is clicked down or not
+      let startX;
+      let scrollLeft;
+
+      // mousedown
+      slider.addEventListener('mousedown', (e) => {
+        isDown = true;
+        slider.classList.add('active');
+        startX = e.pageX - slider.offsetLeft;
+        scrollLeft = slider.scrollLeft;
+        // console.log(e.pageX);
+        // console.log(startX);
+        console.log(scrollLeft);
+      });
+
+      // mouseleave
+      slider.addEventListener('mouseleave', () => {
+        isDown = false;
+        slider.classList.remove('active');
+      });
+
+      // mouseup
+      slider.addEventListener('mouseup', () => {
+        isDown = false;
+        slider.classList.remove('active');
+      });
+
+      // mousemove
+      slider.addEventListener('mousemove', (e) => {
+        if(!isDown) return;    // stop the fn from running
+        e.preventDefault();  // stop the browser think that we might want to select text
+        const x = e.pageX - slider.offsetLeft;
+        console.log({x, startX});  // 27_01
+        const walk = (x - startX) * 3;  // how far we deviated from the initial point, and with `* 3` makes it scroll smoothly
+        // console.log(walk);
+        // slider.scrollLeft = walk; // it seems work but still jumpy
+        slider.scrollLeft = scrollLeft - walk; // recalculating every single time
+
+        // console.count(`isDown: ${isDown}`);
+      });
+    </script>
+
+  </body>
+</html>
+

@@ -28,7 +28,7 @@
 24. [Sticky Nav](/24-Sticky Nav/README.md)
 25. [Event Capture, Propagation, Bubbling and Once](/25-Event Capture, Propagation, Bubbling and Once/README.md)
 26. [Stripe Follow Along Dropdown](/26-Stripe Follow Along Nav/README.md)
-27. lick and Drag to Scroll
+27. [Click and Drag to Scroll](/27-Click and Drag/README.md)
 28. Video Speed Controller UI
 29. Countdown Clock
 30. Whack A Mole Game
