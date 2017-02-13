@@ -30,6 +30,6 @@
 26. [Stripe Follow Along Dropdown](/26-Stripe Follow Along Nav/README.md)
 27. [Click and Drag to Scroll](/27-Click and Drag/README.md)
 28. [Video Speed Controller UI](/28-Video Speed Controller/README.md)
-29. Countdown Clock
+29. [Countdown Clock](/29-Countdown Timer/README.md)
 30. Whack A Mole Game
 
