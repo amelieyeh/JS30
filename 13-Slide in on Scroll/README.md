@@ -6,6 +6,8 @@
 
 ![](images/13_00.png)
 
+view demo [here](https://amelieyeh.github.io/JS30/13-Slide%20in%20on%20Scroll/index.html)
+
 ### Debouncing
 
 use debounce function provided to avoid performance issue, just wrap the `checkSlide` function into the `debounce()` function

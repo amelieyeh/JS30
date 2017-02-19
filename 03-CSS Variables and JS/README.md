@@ -2,6 +2,10 @@
 
 # 03 - CSS Variables and JS
 
+![](images/03_00.png)
+
+view demo [here](https://amelieyeh.github.io/JS30/03-CSS%20Variables%20and%20JS/index.html)
+
 `data-` attribute, `:root`, CSS Variables definition `var(--xxx)`, `filter: blur()`, `change` event and `mousemove` event
 
 - [`dataset`](https://developer.mozilla.org/zh-TW/docs/Web/API/HTMLElement/dataset) property allows to custom data attributes like `data-xxx` on the element, either in HTML or in the DOM. It's a map of **DOMString**, one entry for each custom data attribute.

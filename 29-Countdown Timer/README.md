@@ -4,6 +4,8 @@
 
 ![](images/29_00.png)
 
+view demo [here](https://amelieyeh.github.io/JS30/29-Countdown%20Timer/index.html)
+
 ### The `timer()` function
 
 ```

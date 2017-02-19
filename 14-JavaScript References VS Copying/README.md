@@ -4,6 +4,8 @@
 
 ![](images/14_00.png)
 
+view demo [here](https://amelieyeh.github.io/JS30/14-JavaScript%20References%20VS%20Copying/index.html)
+
 ### Strings, Numbers and Booleans reference and copy
 
 ```

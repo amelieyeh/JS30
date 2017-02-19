@@ -4,7 +4,9 @@
 
 Canvas, HSL, mouse events
 
-![](images/08_01.png)
+![](images/08_00.png)
+
+view demo [here](https://amelieyeh.github.io/JS30/08-Fun%20with%20HTML5%20Canvas/index.html)
 
 ### Canvas
 

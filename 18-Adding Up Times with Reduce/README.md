@@ -4,6 +4,8 @@
 
 ![](images/18_00.png)
 
+view demo [here](https://amelieyeh.github.io/JS30/18-Adding%20Up%20Times%20with%20Reduce/index.html)
+
 ### Grabing times
 
 don't forget to turn the nodeList into an array

@@ -4,6 +4,8 @@
 
 ![](images/30_00.png)
 
+view demo [here](https://amelieyeh.github.io/JS30/30-Whack%20A%20Mole/index.html)
+
 ### Set up things
 
 ```

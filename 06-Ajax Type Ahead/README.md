@@ -1,6 +1,11 @@
 > This is a JavaScript practice with [JavaScript30](https://javascript30.com/) by [Wes Bos](https://github.com/wesbos) without any frameworks, no compilers, no boilerplate, and no libraries.
 
 # 06 - Ajax Type Ahead
+
+![](images/06_00.png)
+
+view demo [here](https://amelieyeh.github.io/JS30/06-Ajax%20Type%20Ahead/index.html)
+
 - `change` & `keyup` events
 - Promise: `fetch()`, `then()`, `json()`
 - Array: `filter()`, `map()`, `push()`, `join()`

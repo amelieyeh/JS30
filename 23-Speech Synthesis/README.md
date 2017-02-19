@@ -4,6 +4,8 @@
 
 ![](images/23_00.png)
 
+view demo [here](https://amelieyeh.github.io/JS30/23-Speech%20Synthesis/index.html)
+
 ### Set up elements
 
 ```

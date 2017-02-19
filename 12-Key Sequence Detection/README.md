@@ -6,6 +6,8 @@
 
 ![](images/12_00.png)
 
+view demo [here](https://amelieyeh.github.io/JS30/12-Key%20Sequence%20Detection/index.html)
+
 ### Array.prototype.join()
 
 Let's take a one more look the `.join()`

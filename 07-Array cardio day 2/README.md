@@ -2,6 +2,10 @@
 
 # 07 - Array Cardio Day 2
 
+![](images/07_00.png)
+
+view demo [here](https://amelieyeh.github.io/JS30/07-Array%20cardio%20day%202/index.html)
+
 `Array.prototype.some()`, `Array.prototype.every()`, `Array.prototype.find()`, `Array.prototype.findIndex()`, `Array.prototype.splice()`, `Array.prototype.slice()`
 
 ### `Array.prototype.some()`

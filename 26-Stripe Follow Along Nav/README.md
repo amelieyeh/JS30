@@ -4,6 +4,8 @@
 
 ![](images/26_00.png)
 
+view demo [here](https://amelieyeh.github.io/JS30/26-Stripe%20Follow%20Along%20Nav/index.html)
+
 ### The `handleEnter()` function
 
 ```

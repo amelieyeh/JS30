@@ -6,6 +6,8 @@
 
 ![](images/15_00.png)
 
+view demo [here](https://amelieyeh.github.io/JS30/15-LocalStorage%20and%20Event%20Delegation/index.html)
+
 ### Take and load datas with localStorage
 
 ```

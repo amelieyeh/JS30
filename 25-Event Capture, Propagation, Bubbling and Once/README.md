@@ -4,6 +4,8 @@
 
 ![](images/25_00.png)
 
+view demo [here](https://amelieyeh.github.io/JS30/25-Event%20Capture,%20Propagation,%20Bubbling%20and%20Once/index.html)
+
 `e.stopPropagation()`, `capture`, `once`
 
 ### The `event.stopPropagation()`

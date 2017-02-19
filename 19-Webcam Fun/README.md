@@ -4,6 +4,8 @@
 
 ![](images/19_00.png)
 
+view demo [here](https://amelieyeh.github.io/JS30/19-Webcam%20Fun/index.html)
+
 for accessing our webcam which is must be tied to *secure origin* means that a website is `HTTPS`, and `localhost` in our tutorial is also a secure origin. we use `npm` (`npm install` & `npm start`) to run our small server to build the page.
 
 ### To `querySelector` elements we need

@@ -4,6 +4,8 @@
 
 ![](images/22_00.png)
 
+view demo [here](https://amelieyeh.github.io/JS30/22-Follow%20Along%20Link%20Highlighter/index.html)
+
 ### To `createElement()` and `append()` it on to the DOM
 
 ```

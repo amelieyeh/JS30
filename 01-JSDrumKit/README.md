@@ -3,6 +3,10 @@
 # 01 - Drum Kit
 key event listener, audio play and toggle class.
 
+![](images/01_00.png)
+
+view demo [here](https://amelieyeh.github.io/JS30/01-JSDrumKit/index.html)
+
 ### Bind an event to our keys when they are pressed.
 
 `window.addEventListener('keydown', playSound)`

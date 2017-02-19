@@ -4,6 +4,8 @@
 
 ![](images/21_00.png)
 
+view demo [here](https://amelieyeh.github.io/JS30/21-Geolocation/index.html)
+
 ### Basic Geolocation
 
 The [`Geolocation.watchPosition()`](https://developer.mozilla.org/en-US/docs/Web/API/Geolocation/watchPosition) method is used to register a handler function that will be called automatically each time the position of the device changes. You can also, optionally, specify an error handling callback function.

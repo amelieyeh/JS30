@@ -4,6 +4,8 @@
 
 ![](images/20_00.png)
 
+view demo [here](https://amelieyeh.github.io/JS30/20-Speech%20Detection/index.html)
+
 ### The `SpeechRecognition`
 
 ```

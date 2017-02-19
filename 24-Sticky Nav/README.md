@@ -4,6 +4,8 @@
 
 ![](images/24_00.png)
 
+view demo [here](https://amelieyeh.github.io/JS30/24-Sticky%20Nav/index.html)
+
 ### Get the position of nav
 
 get nav's top position related to the top of window

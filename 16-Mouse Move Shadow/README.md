@@ -4,6 +4,8 @@
 
 ![](images/16_00.png)
 
+view demo [here](https://amelieyeh.github.io/JS30/16-Mouse%20Move%20Shadow/index.html)
+
 ### Grab elements and hook up mousemve event
 
 our `mousemove` event hooked up on `hero` element, and we want to do text shadow effect on its text, right in the `h1` tag

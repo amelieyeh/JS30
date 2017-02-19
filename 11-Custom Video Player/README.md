@@ -2,6 +2,10 @@
 
 # 11 - Custom Video Player
 
+![](images/11_00.png)
+
+view demo [here](https://amelieyeh.github.io/JS30/11-Custom%20Video%20Player/index.html)
+
 `video.paused`, `video.currentTime`, `dataset` of `.data-` attribute, `parseFloat()`
 
 ### Get all the elements we need

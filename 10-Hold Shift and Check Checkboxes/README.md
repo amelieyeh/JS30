@@ -2,6 +2,10 @@
 
 # 10 - Hold Shift and Check Checkboxes
 
+![](images/10_00.png)
+
+view demo [here](https://amelieyeh.github.io/JS30/10-Hold%20Shift%20and%20Check%20Checkboxes/index.html)
+
 ### Fetch all the `<input>` elements and `addEventListener`
 
 ```

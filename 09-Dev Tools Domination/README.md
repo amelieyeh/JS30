@@ -2,6 +2,10 @@
 
 # 09 - Dev Tools Domination
 
+![](images/09_00.png)
+
+view demo [here](https://amelieyeh.github.io/JS30/09-Dev%20Tools%20Domination/index.html)
+
 `Attributes Modification` on an element and bunch of `console` tricks
 
 ### Attributes Modification

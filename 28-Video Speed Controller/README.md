@@ -4,6 +4,8 @@
 
 ![](images/28_00.png)
 
+view demo [here](https://amelieyeh.github.io/JS30/28-Video%20Speed%20Controller/index.html)
+
 ### Handle Speed function
 
 ```

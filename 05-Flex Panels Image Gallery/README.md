@@ -2,6 +2,10 @@
 
 # 05 - Flex Panels Image Gallery
 
+![](images/05_00.png)
+
+view demo [here](https://amelieyeh.github.io/JS30/05-Flex%20Panels%20Image%20Gallery/index.html)
+
 CSS `flex`, `toggle()`, `includes()`, `transitionend`
 
 ### CSS flex

@@ -5,6 +5,8 @@ pointers rotate animation, get times, changing pointer positions.
 
 ![JS + CSS Clock](images/clock.png)
 
+view demo [here](https://amelieyeh.github.io/JS30/02-JS+CSSClock/index.html)
+
 ### Initialize pointer positions and rotation along the x-axis
 
 `transform-origin: 100%; // transform-origin: right;`
